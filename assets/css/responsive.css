@@ -1,0 +1,14 @@
+@media screen and (min-width: 1440px) {
+  body:after {
+    position: absolute;
+    content: "";
+    background: url("../img/hereo-bg-second.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 1885px;
+    width: 120vw;
+    top: -510px;
+    right: -735px;
+    z-index: -1;
+  }
+}

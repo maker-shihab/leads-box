@@ -30,24 +30,18 @@
             </a>
           </div>
           <div class="header_menu">
-            <ul class="header_nav">
+            <ul class="header_nav" id="header_nav">
               <li class="dropdown">
-                <a href="#">Features</a>
-                <ul class="submenu">
-                  <li><a href="#">Features 1</a></li>
-                  <li><a href="#">Features 2</a></li>
-                  <li><a href="#">Features 3</a></li>
-                  <li><a href="#">Features 4</a></li>
-                </ul>
+                <a href="#"
+                  >Features
+                  <img src="assets/img/arrow-down.png" alt="arrow" />
+                </a>
               </li>
               <li class="dropdown">
-                <a href="#">Resources</a>
-                <ul class="submenu">
-                  <li><a href="#">Resources 1</a></li>
-                  <li><a href="#">Resources 2</a></li>
-                  <li><a href="#">Resources 3</a></li>
-                  <li><a href="#">Resources 4</a></li>
-                </ul>
+                <a href="#"
+                  >Resources
+                  <img src="assets/img/arrow-down.png" alt="arrow" />
+                </a>
               </li>
               <li>
                 <a href="#">Subscription</a>
@@ -61,13 +55,18 @@
             </button>
             <a href="#" class="btn btn_cta">Log In</a>
           </div>
+          <div class="mobile_nav">
+            <button type="button">
+              <img src="assets/img/flag.png" alt="language" />
+            </button>
+            <button type="button" class="mobile_bar" id="mobile_bar">
+              <img src="assets/img/mobile-bar.png" alt="icon" />
+            </button>
+          </div>
         </div>
       </div>
-    </header>
-    <!-- Main Content -->
-    <main>
       <!-- Here area -->
-      <section class="hero_area">
+      <div class="hero_area">
         <div class="container">
           <div class="hero__wrapper">
             <div class="hero__content">
@@ -87,8 +86,11 @@
             </div>
           </div>
         </div>
-      </section>
+      </div>
       <!-- Here area -->
+    </header>
+    <!-- Main Content -->
+    <main>
       <!-- Contact Form -->
       <section class="contact_area">
         <div class="container">
@@ -231,5 +233,14 @@
         </div>
       </div>
     </footer>
+    <!-- For Menu -->
+    <script>
+      const mobileBar = document.getElementById("mobile_bar");
+      const headerMenu = document.getElementById("header_nav");
+      function toggleMenu() {
+        headerMenu.classList.toggle("active");
+      }
+      mobileBar.addEventListener("click", toggleMenu);
+    </script>
   </body>
 </html>

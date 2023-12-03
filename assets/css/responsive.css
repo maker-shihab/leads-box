@@ -1,3 +1,12 @@
+@media screen and (min-width: 1440px) {
+  header::before {
+    height: 1360px;
+    width: 55%;
+    top: -50px;
+    right: 0;
+    z-index: 1;
+  }
+}
 @media screen and (max-width: 1200px) {
   .header_btns {
     display: none;
